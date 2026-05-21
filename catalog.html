@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Veloura</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">Veloura</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="catalog.html">Collection</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+
+</header>
+
+<section class="collection">
+
+    <h1>Our Fashion Collection</h1>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search clothes...">
+
+        <select id="filterSize">
+
+            <option value="all">All Sizes</option>
+            <option value="36">36</option>
+            <option value="38">38</option>
+            <option value="40">40</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+
+        </select>
+
+    </div>
+
+    <div class="category-buttons">
+
+        <button onclick="filterCategory('all')">All</button>
+
+        <button onclick="filterCategory('dress')">
+            Dresses
+        </button>
+
+        <button onclick="filterCategory('shoes')">
+            Shoes
+        </button>
+
+        <button onclick="filterCategory('glasses')">
+            Accessories
+        </button>
+
+        <button onclick="filterCategory('coat')">
+            Outerwear
+        </button>
+
+        <button onclick="filterCategory('sale')">
+            Sale
+        </button>
+
+    </div>
+
+    <div class="cart-icon">
+        🛒 Cart: <span id="cartCount">0</span>
+    </div>
+
+    <div class="products" id="products"></div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Veloura Fashion Store</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
